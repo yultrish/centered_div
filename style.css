@@ -28,14 +28,19 @@
     width: 100%;
     background-color: rgb(123, 47, 164);
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    /* gap: 5rem; */
 }
 
 .wrapper main h3{
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     text-align: center;
-    margin: 0 auto;
+    /* margin: 0 auto;
     padding: 1rem;
-    width: 100%;
+    width: 100%; */
     color: white;
 }
 
@@ -53,5 +58,5 @@ footer h3{
     margin: 0 auto;
     text-align: center;
     width: 100%;
-    background-color: green;
+    /* background-color: green; */
 }
