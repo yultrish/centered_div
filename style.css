@@ -26,17 +26,17 @@
 
 .wrapper main{
     width: 100%;
-    background-color: rgb(123, 47, 164,);
+    background-color: rgb(123, 47, 164);
     color: white;
 }
 
 .wrapper main h3{
-    background-color: aqua;
+    background-color: cadetblue;
     text-align: center;
     margin: 0 auto;
     padding: 1rem;
-    color: cadetblue;
     width: 100%;
+    color: white;
 }
 
 footer{
@@ -49,12 +49,9 @@ footer{
     color: white;
 }
 
-
-
 footer h3{
     margin: 0 auto;
     text-align: center;
     width: 100%;
     background-color: green;
-
 }
