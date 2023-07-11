@@ -17,6 +17,9 @@
 
 .wrapper .sidebar{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(59, 107, 28);
 }
 
@@ -28,14 +31,8 @@
     width: 100%;
     background-color: rgb(123, 47, 164);
     color: white;
-    padding: 1rem;
-    /* margin: 0 auto; */  
-    /* text-align: center; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    gap: 0.5rem; */
+    padding: 1rem 2rem;
+    display: flex;
 }
 
 .wrapper main .flexbox{
@@ -45,7 +42,7 @@
     align-items: center;
     justify-content: center;
     height: 60vh;
-    width: 40%;
+    width: 90%;
     gap: 0.5rem; 
 }
 
@@ -55,17 +52,6 @@
     font-weight: bolder;
 }
 
-
-/* .wrapper main h3{
-    background-color: cadetblue;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0.5rem;
-    width: 100%;
-    color: white;
-    position: relative;
-    top: 50%;
-} */
 
 footer{
     position: absolute;
@@ -81,5 +67,4 @@ footer h3{
     margin: 0 auto;
     text-align: center;
     width: 100%;
-    /* background-color: green; */
 }
