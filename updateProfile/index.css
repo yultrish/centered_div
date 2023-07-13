@@ -15,6 +15,7 @@ body{
 
 
 .profileContainer {
+  
   width: 100%;
   height: 100vh;
   background-color: #c8ddfa;
@@ -23,41 +24,82 @@ body{
   align-items: center;
   overflow: hidden;
   margin: 0 auto;
-  padding: 6rem;
+  padding: 0.8rem 0.5rem;
 
 }
 
 .profile {
-  width: 39%;
-  background-color: #738fb7;
-  color: white;
-  height: 80vh;
+  margin-top: -1rem;
 
-  padding:0.8rem 2rem;
+  width: 65%;
+  background-color: #4b71a6;
+  color: white;
+  height: 95vh;
 
   border-radius: 15px;
+  padding: 1.2rem 1.7rem;
+
 
 }
+.profile .header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.profile .aside{
+  
+  display: grid;
+  grid-template-columns: 18rem auto;
+  grid-gap: 1rem;
+  width: 100%;
+  height: 94%;
+  padding:1.1rem 0.2rem;
+  text-align: center;
+  align-items: center;
+
+}
+
+.profile .aside .profile-control{
+  width: 100%;
+  height: 100%;
+  background-color: #274063;
+  border-radius: 15px;
+  padding: 1rem 0.2rem;
+  position: relative;
+  color: white;
+
+}
+
+
 
 .imageContainer {
-  margin-top: 1.8rem;
+  margin-top: -1.8rem;
   /* height: max-content; */
-  text-align: center;
   margin: 0 auto;
-  width: 40%;
+  width: 100%;
   height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .img-profile {
+  margin-top: -1.8rem;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 50%;
   padding: 1rem 2rem;
 }
-.img {
-  width: 100px;
-  height: 100px;
+ div.img-profile img.image {
+  width: 6rem;
+  height: 6em;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -74,79 +116,215 @@ body{
 
 .iconDiv {
   position: absolute;
-  bottom: 0;
-  right: 1px;
+  bottom: -1.8rem;
+  right: 4.7rem;
+  scale: 0.8;
+  cursor: pointer;
 }
 
 .icon {
   color: #fff;
 }
 
-.header {
-  position: relative;
-  top: 0;
-  left: 0;
+.profile-control .profile-info{
   width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 0.3rem 0.8rem;
+  /* position: relative; */
+  color: white;
+  margin: 0 auto;
+  /* display: none; */
+  
+}
+
+.profile-control .profile-info .info-edit{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  padding: 0.3rem 0.8rem;
+  
+
+}
+
+.profile-control .profile-info .info-edit .info{
+  display: flex;
+  grid-gap: 0.3rem;
+  width: 100%;
+  margin: 0.2rem 02rem;
+  padding: 0;
+  height: 100%;
+  color: white;
+  position: relative;
+
+}
+
+
+ div.profile-control div.profile-info div.info-edit div.info label.info-label{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left:  2.7rem;
+  top: -1rem;
+  color: white;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  color: #27b4e4;
+}
+ div.profile-control div.profile-info div.info-edit div.info span {
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0.8rem;
+  top: 0.5rem;
+  color: white;
+  transform: translateX(-50%);
+  font-size: 1rem;
+
+  
+
+}
+
+
+div.profile div.aside div.edit-profile {
+ 
+  width: 100%;
+  height: 100%;
+  background-color: #274063;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+div.profile div.aside div.edit-profile form {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0.8rem;
+  text-align: center;
+  margin: 0 auto;
+
+}
+div.profile div.aside div.edit-profile form .grid-col{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.2rem;
+  width: 100%;
+}
+div.profile div.aside div.edit-profile form .grid-col .form-control label{
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #eee;
-  padding: 1rem;
-}
-
-form {
-  position: absolute;
-
-  top: 20rem;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  padding: 0.5rem 2.4rem;
+  transform: translateX(-17%);
+  font-size: 0.9rem;
+  height:100% ;
+  scale: 1.1;
+
 }
 
-input {
-  height: 50px;
-  background-color: transparent;
+
+div.profile div.aside div.edit-profile form .form-control{
+  width: 100%;
+  height: 12vh;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.4rem 0.7rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 0.8rem;
+
+}
+
+div.profile div.aside div.edit-profile form .form-control label{
+  color: #27b4e4;
+  font-size: 1.1rem;
+  transform: translateX(-44%);
+  padding: 0.1rem 3.2rem;
+  transition: all 0.3s ease-in-out;
+
+}
+
+div.profile div.aside div.edit-profile form .form-control label:focus{
+  font-size: 1rem;
+}
+
+
+div.profile div.aside div.edit-profile form .form-control input{
+  border: none;
+  border-bottom: 3px;
+  
+  width: 100%;
+  height: 2.7rem;
+  outline:none;
+  border-radius: 8px;
+  padding: 0 1rem;
+  background-color: #0d1828;
+  color: white;
+}
+
+div.profile div.aside div.edit-profile form .form-control input:focus{
+  outline:none; 
+}
+
+div.profile div.aside div.edit-profile form div.form-control label.info-label.last-child {
+  padding: 0.6rem 8.2rem;
+  position: relative;
+  left: 3rem;
+}
+
+ div.profile div.aside div.edit-profile form div.form-control.contact {
+  position: relative;
+}
+
+div.profile div.aside div.edit-profile form div.form-control.contact span {
+position: absolute;
+top: 3.5rem;
+right: 1rem;
+  color: #27b4e4;
+}
+
+.fake-height{
+  width: 100%;
+}
+
+ div.profile div.aside div.edit-profile form button.submit-update {
+  width: 98%;
+  height: 2.7rem;
+  border-radius: 8px;
+  background-color: #27b4e4;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
   border: none;
   outline: none;
-  font-size: 23px;
-  font-weight: 600;
-  color: rgba(0, 0, 0, 0.6);
-  border-bottom: 0.001px solid #eee;
-}
-
-button {
-  margin-top: 2rem;
-  width: 80%;
-  padding: 1.5rem;
-  border-radius: 50px;
-  border: none;
+  margin-top: 1rem;
   cursor: pointer;
-  background-color: #27b4e4;
-  color: whitesmoke;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  margin-top: 1.8rem;
 }
 
-label {
-  color: #ced5d7;
-}
-
-.blueName {
+div.profile div.aside div.edit-profile form button.submit-update:hover {
+  background-color: rgb(230, 230, 230);
   color: #27b4e4;
-  font-weight: 600;
 }
-.phone {
-  color: rgba(0, 0, 0, 0.4);
-  margin-left: 5rem;
+
+.trick-upload{
+  width: 50%;
+  height: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
 }
