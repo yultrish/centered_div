@@ -82,7 +82,7 @@ body{
     object-fit: cover;
 }
 
-.profile-image span{
+/* .profile-image span{
     background-color: aliceblue;
     width: 30px;
     height: 30px;
@@ -91,6 +91,27 @@ body{
     position: absolute;
     bottom: 0.5rem;
     right: 5rem;
+    color: pink;
+    cursor: pointer;
+} */
+
+.profile-icon-container{
+    position: absolute;
+    bottom: -1rem;
+    right: 4.5rem;
+    scale: 0.8;
+    cursor: pointer;
+  }
+
+ .profile-icon{
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: green; */
     color: pink;
 }
 
@@ -224,8 +245,10 @@ body{
 
 .input-icon span{
     position: absolute;
-    left: 16rem;
+    left: 18rem;
     padding: 0.3rem 0;
+    /* background-color: pink; */
+    color: grey;
 }
 
 .form-edit-info button{
@@ -242,4 +265,14 @@ body{
 .form-edit-info button:hover{
     background-color: rosybrown;
     border: 2px solid rosybrown;
+}
+
+.trick-upload{
+    background-color: brown;
+    width: 50%;
+  height: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
 }
