@@ -38,6 +38,10 @@ function ivoiceDisplay(){
     })    
     })
 
+    
+}
+formInvoice.addEventListener('submit', function(e){
+    e.preventDefault()
     if (
         firstName.value === '' ||
         lastName.value === '' ||
@@ -51,23 +55,15 @@ function ivoiceDisplay(){
       ) {
         alert('Please enter all the required details.');
         return;
-
-        invoiceInfo.style.display = 'none'
-
       }
-}
-formInvoice.addEventListener('submit', function(e){
-    e.preventDefault()
     console.log('form')
-    // formInvoice.style.display = 'none'
     ivoiceDisplay()
 })
 
 trendbtn.addEventListener('click', function(){
     trends.style.display = 'none'
     invoiceInfo.style.marginTop = 'unset'
-    formInvoice.style.marginTop = 'unset'
-    
+    formInvoice.style.marginTop = 'unset'   
 })
 
 // $(document).ready(function(){
