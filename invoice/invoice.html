@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="invoice.css">
+    <title>invoice</title>
+</head>
+<body>
+    <section class="invoice-container">
+        <section class="invoice-contents">
+            <div class="invoice-information">
+                <div class="invoice-header">
+                    <div class="logo">
+                        <img src="./faviconV2.png" alt="">
+                        <div class="slogan">
+                            <span class>company</span>
+                            <span>company tagline hire</span>
+                        </div>  
+                    </div>
+                    <div class="invoice-details">
+                        <div class="header">
+                            <h3>invoice</h3>
+                        </div>
+                        <div class="account-details">
+                            <h5>Account No:</h5>
+                            <h5 class="acc-no"></h5>
+                        </div>
+                        <div class="account-details">
+                            <h5>Account Name</h5>
+                            <h5 class="invoice-owner"></h5>
+                        </div>
+                </div>
+                </div>
+                <main class="invoice-main-body">
+                    <div class="invoice-to">
+                        <h3 class="owner">invoice to</h3>
+                        <h3 class="invoice-owner"></h3>
+                        <div class="personal-details">
+                            <span class="invoice-job">Profession:</span>
+                            <span class="phone">Phone:</span>
+                            <span class="email">Email:</span>
+                    </div>
+                    </div>
+                    <div class="invoice-payment-method">
+                        <h3>Payment Method</h3>
+                        <div class="account-details">
+                            <span>Account Number</span>
+                            <span class="acc-no"></span>
+                        </div>
+                        <div class="account-details">
+                            <span>Acount Name</span>
+                            <span class="invoice-owner"></span>
+                        </div>
+                        <div class="account-details">
+                            <span>branch name</span>
+                            <span class="branch-name"></span>
+                        </div>
+                    </div>
+                </main>
+                <table class="invoice-table">
+                    <thead class="invoice-thead">
+                        <tr class="invoice-row">
+                            <th class="description">product Description</th>
+                            <th>price</th>
+                            <th>qty</th>
+                            <th>amount</th>
+                         </tr>
+                         <tbody class="invoice-tbody">
+                            <tr>
+                                <td>laptop with charger</td>
+                                <td>500</td>
+                                <td>5</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>laptop</td>
+                                <td>500</td>
+                                <td>5</td>
+                                <td>100</td>
+                            </tr>
+                         </tbody>
+                         <tfoot>
+                            <tr>
+                                <td></td>
+                                <td>subtotal</td>
+                                <td></td>
+                                <td>200</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Tax(10%)</td>
+                                <td></td>
+                                <td>300</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td></td>
+                                <td></td>
+                                <td>300</td>
+                            </tr>   
+                         </tfoot>
+                    </thead>
+                </table>
+                
+                <section class="invoice-condition">
+                    <h3>Terms & Conditions</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, 
+                        adipisicing elit. Earum, alias! Modi 
+                        repellendus dignissimos ea facilis 
+                        magni impedit cum, consequuntur 
+                        pariatur aspernatur ipsam, quia 
+                        veniam accusantium porro dolores, 
+                        quidem laborum debitis.
+                    </p>
+                </section>
+
+                <footer>
+                   <div class="icon-container">
+                    <div class="icons-info">
+                        <span class="material-symbols-outlined">
+                            phone_in_talk
+                            </span>
+                        <p>055 382 22055</p>    
+                    </div>
+                    <div class="icons-info">
+                        <span class="material-symbols-outlined">
+                            mail
+                            </span>
+                        <p>yultrish@gmail.com</p>    
+                    </div>
+                    <div class="icons-info">
+                        <span class="material-symbols-outlined">
+                            location_on
+                            </span>
+                        <p>Patrice Lumba Street</p>    
+                    </div>
+                   </div>
+                   <div class="signature">
+                    <div class="sig-name">
+                        <h5>Your name and signature</h5>
+                        <div class="shape">
+                            <div>2</div>
+                        </div>
+                        
+                    </div>
+                   </div>
+                </footer>
+            </div>
+
+            
+            
+            <div class="invoice-form">
+               
+                <form class="form-invoice">
+                    <h3>Account Details</h3>
+                    <div class="invoice-form-details">
+                        <div class="forms-details">
+                            <label for="first-name">Account Name</label>
+                            <div class="owner">
+                                <input type="text" id="first-name" placeholder="first">
+                                <input type="text" id="last-name" placeholder="first">
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="forms-details">
+                            <label for="account-number">Account-Number</label>
+                            <input type="text" id="account-number" placeholder="first">
+                        </div>
+                        <div class="forms-details">
+                            <label for="branch">Branch</label>
+                            <input type="text" id="branch" placeholder="">
+                        </div>
+                        <div class="forms-details">
+                            <label for="profession">Profession</label>
+                            <input type="text" id="profession" placeholder="">
+                        </div>
+                        <div class="forms-details">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" placeholder="first">
+                        </div>
+                        <div class="forms-details">
+                            <label for="phone">phone</label>
+                            <input type="text" id="phone" placeholder="first">
+                        </div>
+                        <div class="forms-details">
+                            <label for="account-number">Date</label>
+                            <input type="date" id="first-name" placeholder="first">
+                        </div>
+                        <button class="submit">submit</button>
+                    </div>
+                   
+                </form>
+            </div>
+         
+
+                
+                
+        </section>
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./invoice.js"></script>
+    </body>
+</html>
