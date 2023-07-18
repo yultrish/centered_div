@@ -3,69 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body{
-    background-color: azure;
-    width: 100%;
-    height: 100vh;
-
-}
-
 .project-container{
     background-color: aliceblue;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    background-color: pink;
+    padding: 1rem;
+
 }
 
-.project-container .project-contents{
-    width: 60%;
-    height: 90%;
-    background-color: pink;
-    padding: 0 2rem;
-    border-radius: 20px;
+.profile-contents{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(219, 148, 159);
+    /* justify-content: center;
+    align-items: center; */
+    gap: 0.5rem;
 }
 
 .project-header{
-    width: 60%;
-    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: red; */
-    padding: 0.5rem 0.2rem;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    white-space: nowrap;
+    padding: 2rem;
+}
 
+.project-header span:last-child{
+    font-weight: bolder;
+    font-size: 2rem;
 }
 
 
 .profile-container{
-    width: 100%;
-    height: 90%;
-    display: grid;
-    grid-template-columns: 20rem auto;
-    padding: 0.5rem;
-    background-color: aqua;
-    column-gap: 2rem;
-    border-radius: 30px;
-    background-color: pink;
-    /* padding: 2rem; */    
-}
-
-.profile-contents{
-    width: 100%;
-    height: 90%;
+    padding: 2rem;
     background-color: rgb(219, 148, 159);
-    padding: 1rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
     border-radius: 30px;
-    margin-bottom: 2rem;
-    height: 10;
-    /* background-color: brown; */
+    
 }
 
 .profile-image{
@@ -73,7 +49,6 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-    margin:  1.5rem 0;
 }
 
 .profile-image img{
@@ -82,59 +57,52 @@ body{
     object-fit: cover;
 }
 
-/* .profile-image span{
-    background-color: aliceblue;
-    width: 30px;
-    height: 30px;
-    padding: 0.2rem;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 0.5rem;
-    right: 5rem;
-    color: pink;
-    cursor: pointer;
-} */
-
-.profile-icon-container{
+.profile-icon{
     position: absolute;
     bottom: -1rem;
-    right: 4.5rem;
+    right: 3.8rem;
     scale: 0.8;
     cursor: pointer;
-  }
+}
 
- .profile-icon{
+.icon-pic{
     width: 50px;
     height: 50px;
-    background-color: aliceblue;
     border-radius: 50%;
+    background-color: aliceblue;
+    color: pink;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: green; */
-    color: pink;
 }
 
-.profile-form{
-    height: 90%;
-}
 
 .profile-form form{
-    width: 100%;
-    height: 80%;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
     display: flex;
     flex-direction: column;
     margin: 0.2rem;
+    gap: 1rem;
+    position: relative;
     /* background-color: blue; */
+    /* i will-change this in tablet; */
 }
 
 .profile-form form .form-info{
     /* height: 90%; */
     display: flex;
     flex-direction: column;
+    gap: 0.2rem;
     /* gap: 1rem; */
 }
+
+.profile-form form .input-icon{
+    /* background-color: aquamarine; */
+    position:  absolute;
+    bottom: 1.5rem;
+    left: 14rem;
+}
+
 
 .profile-form form input{
     padding: 0.3rem 0rem;
@@ -142,15 +110,13 @@ body{
     background-color: rgb(219, 148, 159);
     font-weight: bolder;
     font-size: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     
     outline: none;
     
     cursor: pointer;
     border-bottom: 2px solid lightgray;
     /* background-color: brown; */
-
-    
 }
 
 .profile-form form input:focus{
@@ -169,59 +135,38 @@ body{
      justify-content: flex-end;
 }
 
-
 .profile-form form label{
     color: lightgray;
     font-weight: lighter;
 }
 
 
-.profile-form form button{
-    margin-top: 1rem;
-    padding:1rem 0.5rem;
-    background-color: rgb(33, 184, 234);
-    border-radius: 15px;
-    font-weight: bolder;
-    color: aliceblue;
-    text-transform: uppercase;
-    border: rgb(33, 184, 234);
-    width: 90%;
-}
-
 .profile-edit{
-    height: 90%;
     background-color: rgb(219, 148, 159);
     border-radius: 35px;
-    padding: 3rem 0;
+    padding: 1rem 0;
+    display: relative;
+
+    /* wil change this in tablet */
 }
 
-.form-grid{
-    width: 90%;
-    /* background-color: brown; */
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 0.5rem;
+.form-edit .input-icon{
+    /* background-color: aqua; */
+    position: absolute;
+    top: 60.6rem;
+    left: 17.3rem;
 }
 
-.form-edit{
-    /* background-color: bisque; */
-    padding: 0 2rem;
-    color: lightgray;
-    font-weight: bold;
-    
-}
 .form-edit-info{
     display: grid;
     grid-template-columns: 1fr;
-    /* background-color: blue; */
-    width: 100%;
-    gap: 0.5rem;
+    gap: 0.2rem;
+    /* i will change this in tablet */
 }
 
 .form-edit-info input{
-    width: 100%;
-    margin-bottom: 2rem;
-    padding: 0.5rem 2rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 20px;
     outline: none;
     border: none;
@@ -239,40 +184,29 @@ body{
     margin-bottom: 1.7rem;
 }
 
-.input-icon{
-    position: relative;
-}
-
-.input-icon span{
-    position: absolute;
-    left: 18rem;
-    padding: 0.3rem 0;
-    /* background-color: pink; */
-    color: grey;
-}
-
 .form-edit-info button{
-    padding:0.7rem 0.5rem 0.5rem 0.5rem;
+    padding:1rem 0.5rem;
     background-color: aliceblue;
     border-radius: 15px;
     font-weight: bolder;
     color: grey;
     text-transform: uppercase;
     border: 2px solid aliceblue;
-    width: 100%;
 }
 
-.form-edit-info button:hover{
-    background-color: rosybrown;
-    border: 2px solid rosybrown;
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.trick-upload{
-    background-color: brown;
-    width: 50%;
-  height: 4rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;
+.submit-btn button{
+    flex-grow: 3;
+    padding:1rem 0.5rem;
+    background-color: aliceblue;
+    border-radius: 15px;
+    font-weight: bolder;
+    color: grey;
+    text-transform: uppercase;
+    border: 2px solid aliceblue;
 }
