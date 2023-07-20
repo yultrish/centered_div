@@ -210,3 +210,12 @@
     text-transform: uppercase;
     border: 2px solid aliceblue;
 }
+
+.trick-upload{
+    width: 50%;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+  } 

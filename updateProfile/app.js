@@ -5,50 +5,24 @@ $(document).ready(function () {
     const uploadButton = document.querySelector("div.img-profile div.iconDiv");
   
     uploadButton.addEventListener("click", function () {
-      document.querySelector("input[type=file]").click();
-      $("input[type=file]").on("change", function () {
+
+
+    $("input[type=file]").on("change", function () {
         var input = this;
         if (input.files && input.files[0]) {
           var reader = new FileReader();
   
           reader.onload = function (e) {
-            $("#image").attr("src", e.target.result);
+              $('#image').attr("src", e.target.result);
           };
   
           reader.readAsDataURL(input.files[0]);
         }
       });
+
+
     });
-
-    const editHeader = document.querySelector('.header h3');
-    
-    editHeader.style.display = 'none';
-
-
-
-    // ---------------- get window width ----------------
-    const width = window.innerWidth;
-    console.log(width);
-
-    if( width <= 425){
-        // alert("Please use a desktop to update your profile");
-
-      
-        const editProfile = document.querySelector('.edit-profile');
-        profileInfo = document.querySelector('.profile-control .profile-info');
-        // editProfile.style.display = 'none';
-        
-        const profileControl = document.querySelector('.profile-control');
-        profileControl.style.height = '100vh';
-        profileControl.classList.remove('d-none');
-        profileControl.classList.add('d-flex');
-    
-        // -----------  show edit profile --------------
-        editProfile.classList.remove('d-block');
-        editProfile.classList.add('d-none');
-
-    }
-    
+  
     $(".submit-update").click(function (e) {
       e.preventDefault();
   
@@ -80,10 +54,5 @@ $(document).ready(function () {
       profile_phone.text("");
       profile_phone.text(phone);
     });
-
-    let result = 0;
-    console.log(result)
-     result = 5;
   });
   
-  // ------------------- wait for all element to load ends -------------------

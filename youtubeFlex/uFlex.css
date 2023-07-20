@@ -26,7 +26,8 @@
     flex-direction: column;
     padding: 2rem;
     background-color: aliceblue;
-    background-image: url(./bg\ image\ cd2.jpeg);
+    background-image: url(bg\ image\ cd2.jpeg);
+    
   }
 
   .heading{
@@ -77,6 +78,22 @@
   .container-2 div{
     padding: 15px;
     /* border: 1px #ccc solid; */
+    /* background-image: url(./yvonne.jpeg); */
+  }
+
+  .container-2 div:nth-child(2){
+    background-color: aliceblue;
+    display: flex;
+    /* height: 50vh; */
+    flex-basis: 50%;
+    /* height: 200px;
+    margin: auto; */
+
+  }
+
+  .boxs{
+    display: flex;
+    flex-direction: column;
   }
 
   .box{
