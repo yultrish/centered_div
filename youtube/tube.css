@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.project-container{
+    background-color: aliceblue;
+    margin: 0 auto;
+    width: 70%;
+    height: 70vh;
+    color: aliceblue;
+    background-color: rgb(41, 39, 39);
+    /* padding: 2rem; */
+    
+    /* background-color: blue; */
+}
+
+.project-contents{
+
+}
+
+nav{
+    display: flex;
+    /* background-color: red; */
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+    /* margin-top: 1rem; */
+    /* background-color: brown; */
+}
+
+
+
+.icons-text{
+    display: flex;
+
+}
+
+.youtube-logo{
+    
+}
+
+.menu{
+    padding-right: 2rem;
+    margin-top: 1rem;
+}
+
+h3{
+    margin-top: 0.5rem; 
+    font-weight: bolder; 
+    font-size: 2rem;
+}
+
+.input-icons{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    /* border: 2px solid; */
+}
+
+input{
+    /* flex-grow: 1; */
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid black;
+    outline: none;
+    background-color: black;
+    cursor: pointer;
+    margin: unset;
+}
+
+input.focus{
+    outline: none;
+}
+
+.icons-input-container{
+      /* border: 2px solid; */
+    
+      color: aliceblue;
+      
+     
+}
+
+.search{
+    position: absolute;
+    right: 2rem;
+    color: aliceblue;
+    /* padding-bottom: 0.3rem; */
+    background-color: rgb(84, 79, 79);
+    width: 25px;
+    height: 30px;
+}
+
+.voice{
+    width: 30px;
+    height: 30px; 
+    background-color: rgb(84, 79, 79);
+    /* margin-top: 0.5rem; */
+    
+}
+
+.youtube-icons-img{
+    margin-top: 1rem;
+}
