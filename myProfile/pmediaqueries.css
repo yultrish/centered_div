@@ -85,19 +85,24 @@
             margin: 0 auto;
             border-radius: 35px;
             padding: 2rem;
+            margin-top: 1.5rem;    
         }
 
         .project-header{
             display: block;
             padding: unset;
+            position: relative;
+            /* cursor: progress; */
         }
 
         .project-header span:last-child{
             /* background-color: aqua; */
-            margin-left: 22rem;
-            margin-top: 8rem;
+            position: absolute;
+            right: 6rem;
+            bottom: 0;
             font-weight: bolder;
             font-size: 2rem;
+            cursor: pointer;
         }
 
         .profile-container{
@@ -121,13 +126,22 @@
 
         .profile-contents{
             padding: 2rem;
-            border-radius: 35px;   
+            border-radius: 35px; 
+            /* background-color: blueviolet;  */
+            /* padding: unset;  */
+            margin: unset;
+            margin-top: 7rem;
+            height: 70vh;
         }
 
         .profile-form form{
             /* background-color: aqua; */
             display: flex;
             flex-direction: column;
+        }
+
+        .profile-form form input{
+            margin: unset;
         }
 
         .profile-form form .form-info{
@@ -140,8 +154,11 @@
 
         .form-edit{
             /* background-color: aquamarine; */
-            padding: 2rem;
             position: relative;
+            /* background-color: brown; */
+            height: 40vh;
+            padding: 2rem;
+
         }
 
         .form-grid{
@@ -160,7 +177,30 @@
 
         .submit-btn{
             margin-top: 2rem;
-        }  
+        } 
+        
+        .form-edit-info{
+            padding: unset;
+            /* background-color: aquamarine; */
+            margin: unset;
+        } 
+
+        .profile-edit{
+            margin-top: 7rem;
+            /* background-color: black; */
+            height: 70vh;
+        }
+        .form-edit button{
+            background-color: black;
+            margin: unset;
+        }
+
+        .form-edit-info input{
+            margin: unset;
+        }
+        .form-edit-info input:last-child{
+            margin-bottom: 1rem;
+        }
     }
 
 }

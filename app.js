@@ -24,7 +24,7 @@
                     return;
                 }
         
-                window.location.href = `./profile/index.html?email=${email.value}`;
+                window.location.href = `../profile/index.html?email=${email.value}`;
         
         
         
