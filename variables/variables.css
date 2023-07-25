@@ -57,6 +57,7 @@
 }
 
 .menu-top img{
+    margin-top: 1rem;
     border-radius: 50%;
     display: none;
 }
@@ -293,7 +294,7 @@ border-bottom: 2px solid;
             height: 100vh;
             position: relative;
             display: grid;
-            grid-template-columns: 17% 80%;
+            grid-template-columns: 17% auto;
             grid-gap: 1rem;
         
         } 
@@ -306,6 +307,7 @@ border-bottom: 2px solid;
             display: grid;
             grid-template-columns: repeat(3,1fr);
             gap: 1rem;
+            width: 100%;
         
         }
 
