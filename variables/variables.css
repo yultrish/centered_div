@@ -213,6 +213,14 @@ border-bottom: 2px solid;
     width: 50%;
 }
 
+.card-footer button p{
+    font-size: 1.5rem;
+}
+
+.card-footer span{
+    margin-top: 0.2rem;
+}
+
  .card:last-child{
     background-color: var(--color-warning);
 }
