@@ -47,8 +47,13 @@
 .project-header{
     background-color: var(--primary-color);
     /* height: 120vh; */
-    padding: 2rem;
+    padding: 0 2rem;
 
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu-top img{
@@ -59,7 +64,10 @@
 .menu-top span{
     color: var(--color-dark);
     cursor: pointer;
+    margin-top: 1rem;
 }
+
+
 
 /* .side-bar{
     height: 2;
@@ -127,17 +135,18 @@ border-bottom: 2px solid;
 
  .switch{
     display: block;
-    width: 80px;
+    width: 100px;
     height: 2rem;
     display: flex;
     border-radius: 10px;
     padding: var(--padding-1);
     align-items: center;
     cursor: pointer;
-    background-color: var(--background-color);
     color: var(--color-light);
     padding: 2rem;  
     font-size: 3.2rem;
+    justify-content: space-between;
+    gap: 0.5rem;
 }
 
  .switch span{
@@ -148,13 +157,14 @@ border-bottom: 2px solid;
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    padding: 0.5rem;
     background-color: #005b96;
-    background-color: #1d1d1d;
+    background-color: var(--color-light);
     color: var(--color-dark);
 }
 
-.light{
-    
+.contents .switch{
+    display: none;
 }
 
 .card-col{
@@ -180,7 +190,7 @@ border-bottom: 2px solid;
 
 .card-col .card:hover {
     filter: blur(0px);
-    transform: scale(1.1);
+    transform: scale(1.0.5);
     opacity: 1;
 }
 
@@ -199,6 +209,7 @@ border-bottom: 2px solid;
     color: var(--color-light);
     page-break-after: 20px;
 }
+
  .card-footer button{
     background-color: var(--color-light);
     color: var(--color-dark);
@@ -210,7 +221,7 @@ border-bottom: 2px solid;
     justify-content: space-between;
     transition: all 400ms ease-in-out;
     margin: 0 5rem;
-    width: 50%;
+    width: 70%;
 }
 
 .card-footer button p{
@@ -254,11 +265,23 @@ border-bottom: 2px solid;
         border-radius: 50%;
         display: block;
     }
+    
+    .contents .switch{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .top .switch{
+        display: none;
+    }
 
     .card-footer button{
         margin-top: 1rem;
         width: 70%;
     }
+
+    
 
 }
 
