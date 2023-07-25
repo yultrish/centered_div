@@ -177,6 +177,7 @@ margin: 0 auto;
     padding: 1rem;
     border-radius: 15px;
     background-color: var(--color-primary-variant);
+    cursor: pointer;
 }
 
 .card-col .card:hover {
