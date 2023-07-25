@@ -115,10 +115,10 @@ border-bottom: 2px solid;
 
 .header{
     display: flex;
-justify-content: space-between;
-align-items: center;
-padding: var(--padding-1);
-margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-1);
+    margin: 0 auto;
 }
 
 .content .header h1{
@@ -210,6 +210,7 @@ margin: 0 auto;
     justify-content: space-between;
     transition: all 400ms ease-in-out;
     margin: 0 5rem;
+    width: 50%;
 }
 
  .card:last-child{
