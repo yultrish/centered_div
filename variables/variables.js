@@ -22,11 +22,8 @@ window.addEventListener('load', () => {
         if(width <= 800){
             list = document.querySelector('ul')
             list.style.display = 'block'  
-         }else{
-            list.syle.display = 'none'
          }
-
-         return
+         return;
 
     })
 
