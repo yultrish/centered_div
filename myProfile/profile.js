@@ -101,6 +101,7 @@ const uploadButton = document.querySelector('div.profile-image div.profile-icon-
     $('input#emerg-form').val('')==''
     ){
       alert('Please enter all the required details.')
+      return
     }
     
     // Reseting profile-edit-form

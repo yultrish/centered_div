@@ -96,7 +96,7 @@ input.focus{
 .search{
     position: absolute;
     right: 3rem;
-    color: aliceblue; */
+    color: aliceblue; 
     padding-bottom: 0.3rem;
     background-color: rgb(84, 79, 79);
     width: 25px;
