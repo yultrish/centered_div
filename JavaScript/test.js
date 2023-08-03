@@ -1,6 +1,6 @@
 console.log(" test our understanding of data types, data properties, and data methods")
 
-// create and object
+// create an object
 let maxSpeed = {
     car: 300, 
     bike: 60, 
@@ -10,14 +10,14 @@ let maxSpeed = {
 };
 
 // turn that object created above into an array
-maxArray = Object.entries(maxSpeed)
+maxSpeedArray = Object.entries(maxSpeed)
 console.log(maxArray)
 
 //sort the array and console.log(results)
-maxArraysorted = maxArray.sort((a,b)=>{
+maxSpeedArraysorted = maxArray.sort((a,b)=>{
     return a[1] - b[1]
 })
-console.log(maxArraysorted)
+console.log(maxSpeedArraysorted)
 
 
 
