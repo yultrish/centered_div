@@ -1,0 +1,15 @@
+section{
+    width: 80%;
+    height: 70vh;
+    padding: 20px;
+    margin: 0 auto;
+}
+td img{
+    position: relative;
+}
+.dot{
+    position: absolute;
+    background-color: green;
+    border-radius: 100;
+    size: 30px;
+}
