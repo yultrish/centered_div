@@ -10,12 +10,12 @@ let maxSpeed = {
 };
 
 // turn that object created above into an array
-maxArray = Object.values(maxSpeed)
+maxArray = Object.entries(maxSpeed)
 console.log(maxArray)
 
 //sort the array and console.log(results)
 maxArraysorted = maxArray.sort((a,b)=>{
-    return a - b
+    return a[1] - b[1]
 })
 console.log(maxArraysorted)
 
