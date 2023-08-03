@@ -15,10 +15,16 @@ maxSpeedArray = Object.entries(maxSpeed)
 console.log(maxSpeedArray)
 
 //sort the array and console.log(results)
-maxSpeedArraysorted = maxSpeedArray.sort((a,b)=>{
+maxSpeedArraysortedKeys = maxSpeedArray.sort((a,b)=>{
+    return a[0] - b[0]
+})
+console.log(maxSpeedArraysortedKeys)
+
+maxSpeedArraysortedvalues = maxSpeedArray.sort((a,b)=>{
     return a[1] - b[1]
 })
-console.log(maxSpeedArraysorted)
+
+console.log(maxSpeedArraysortedvalues)
 
 
 
