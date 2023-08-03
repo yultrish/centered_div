@@ -20,7 +20,7 @@ maxArraysorted = maxArray.sort((a,b)=>{
 console.log(maxArraysorted)
 
 
-// console.log(sortedProfileArray)
+
 
 
 
